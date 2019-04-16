@@ -36,6 +36,9 @@
                     <p>Welcome to your iView app!</p>
                     <Button @click="handleStart">Start iView</Button>
                     <Button @click="handleRouter">跳转到</Button>
+                    <Button @click="handleRouter1">跳转到menu</Button>
+                    <Button @click="handleRouter2">跳转到test</Button>
+
                 </h2>
             </Col>
         </Row>
@@ -55,6 +58,12 @@
             },
             handleRouter(){
                 this.$router.push('/about');
+            },
+            handleRouter1(){
+                this.$router.push('/menu');
+            },
+            handleRouter2(){
+                this.$router.push('/test');
             }
         }
     }

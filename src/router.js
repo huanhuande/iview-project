@@ -10,6 +10,14 @@ const routers = [
         path:'/about',
         component:(resolve)=> require(['./views/about.vue'],resolve)
 
+    },
+    {
+        path:'/menu',
+        component:(resolve)=> require(['./views/menu.vue'],resolve)
+    },
+    {
+        path:'/test',
+        component:(resolve)=> require(['./views/test.vue'],resolve)
     }
 ];
 export default routers;
